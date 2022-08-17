@@ -1,0 +1,69 @@
+extensiones necesarias para el funcionamiento de Angular:
+-Angular shipper
+-Angular languaje services
+-Angular2-inline
+
+**en el cdm:
+-npm install -g @angular/cli (cdm correr como administrador)
+-Crear un nuevo proyecto en desktop,abro cdm y cd y arrastro el proyecto
+-ng new bases para trabajar en proyecto de angular sobre esta version
+-ng version (version angular) => se puede realizar desde la consola
+-dir
+***CORRER EL PROYECTO:
+-Primero cd y el nombre de la carpeta donde se requiere abrir el proyecto
+-ng serve -o para correr el servidor de angular
+
+***Explicación archivos:
+-tsconfig.json: configuraciones de tyscript,como se va a traducir o a funcionar en proyecto
+-tsconfig.spec.json: extens: toma lo que se encuentre en el archivo 
+y le añade ciertas caracteristicas, archivo de configuracion y spec relacionado a la pruebas
+-tsconfig.app.json: extends desde la configuración 
+-package.json: No requiere modificación manual, se realiza mediante comandos
+-package-lock.json: No se modifica manualmente, este archivo explica como se contruyo los modulos de node
+-Karma.conf.js: configuraciones para las pruebas unitarias y enteras
+-angular.json: Configuraciones importantes para la aplicación:
+  -assets:Recursos Estaticos
+-.gitignore: Son archivos que yo no quiero que git les de seguimiento
+-.editosconfig: reglas para archivos de tyscript
+-.browserlistrc: por si se necesita incrementar la conexion a internet avanzado
+
+***SRC:
+
+*app.componet.html: Archivo html la cual construye la pagina
+*app.componet.spec.ts: Archivos de Pruebas
+*app.component.ts: clase tyscript (tienen decoradores)
+*app.module.ts: aplicación en general que componen la misma, se puede observar como un agrupador
+*assets: se utilizan para colocar recursos estaticos,img,video, sound
+*enviroments.ts: variables de entornos: desarollo y producción
+*favicon.ico: iconos
+*index.html: pagina que se visauliza a nivel macro
+*main.ts: En ambiente en el cual se esta ejecutando el proyecto
+*Polytills:Mayor compatiblidad con navegadores web
+*styles.scss: styles de manera global o general
+*test.ts: Ambiente de pruebas
+
+
+**SINTAXIS SCSS:
+$color-fondos: #F55;
+
+h1 {
+  background-color: $color-fondos;
+}
+
+**SINTAXIS HTML:
+<app-root> no es un elemento HTML típico, sino uno customizado, creado automáticamente por Angular la primera vez que generamos el esqueleto de 
+una app con Angular, como parte del componente app
+
+
+**EVENTOS:
+-Son definidos con ()
+
+CREAR ARCHIVOS CON SUS COMPONENTES:
+ng g c (generally component)
+
+
+**TEMPLATE:
+-Codigo de html que representa las vistas
+
+**MODULOS:
+-app.module.ts: modulo principial cargado en el main
