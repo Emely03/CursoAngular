@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 
 import { Heroesmodule } from './heroes/heroes.module';
 import { Contadormodule } from './contador/contador.module';
-
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [ //componentes que se estan utilizando
     AppComponent,
+   
     //se agrega para que se ejecuten los nuevos cambios en app.component.ts
   ],
   imports: [
     BrowserModule,
     Heroesmodule,
     Contadormodule,
+    DbzModule,
     AppRoutingModule
   ],
   providers: [],
